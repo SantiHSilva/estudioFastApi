@@ -1,7 +1,7 @@
 # coding: utf-8
 from sqlalchemy import Column
 from sqlalchemy import Integer, String, DateTime
-from config.db import BaseTable
+from forma2.src.database import BaseTable
 
 class Country(BaseTable):
     __tablename__ = 'country'

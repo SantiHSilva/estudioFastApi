@@ -1,16 +1,14 @@
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from config.db import SessionTemp
+from database import SessionTemp
 
 class CRUD():
 
     def __init__(self, model):
         self.Model = model
         self.db = SessionTemp()
-
     
     def get_model_by_id(self, model_id: int):
-        # De la base de datos, de la tabla
         return self.db.query(self.Model).get(model_id)
 
     def get_all(self):

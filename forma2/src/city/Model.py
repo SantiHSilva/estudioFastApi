@@ -1,7 +1,7 @@
 from sqlalchemy import Column
 from sqlalchemy.orm import relationship
 from sqlalchemy import Integer, String, DateTime, ForeignKey
-from config.db import BaseTable
+from forma2.src.database import BaseTable
 
 class City(BaseTable):
     __tablename__ = 'city'

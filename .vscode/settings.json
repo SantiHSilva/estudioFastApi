@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "**/*.toml": true,
+        "forma2.egg-info": true,
+        "venv": true,
+        "**/*.pycache": true
+    }
+}

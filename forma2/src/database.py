@@ -13,10 +13,8 @@ DATABASE = {
 }
 
 engine = create_engine(
-    f'postgresql+psycopg2://{DATABASE["username"]}:{DATABASE["password"]}@{DATABASE["host"]}/{DATABASE["database"]}'
+    f'postgresql+psycopg://{DATABASE["username"]}:{DATABASE["password"]}@{DATABASE["host"]}/{DATABASE["database"]}'
 ) # Usando psycopg. No usar psycopg2 por errores
-
-
 
 meta = MetaData()
 conn = engine.connect()

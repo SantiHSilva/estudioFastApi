@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from services.Country import CountryService
-from schematics.Country import Country
+from .Services import CountryService
+from .Schematics import Country
 
 country_router = APIRouter()
 country_service = CountryService()
